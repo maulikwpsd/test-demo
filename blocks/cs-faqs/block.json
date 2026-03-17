@@ -1,0 +1,18 @@
+{
+  "name": "acf/cs-faqs",
+  "title": "FAQs Block",
+  "description": "FAQs Block",
+  "category": "cs-content",
+  "icon": "admin-plugins",
+  "keywords": [
+    "faqs",
+    "faq"
+  ],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cs-faqs.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

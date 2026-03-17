@@ -1,0 +1,17 @@
+{
+  "name": "acf/tb-hero-landing",
+  "title": "TB - Landing Hero",
+  "description": "Landing hero block for Toolbox child theme.",
+  "category": "cs-hero",
+  "icon": "admin-plugins",
+  "keywords": ["hero", "toolbox", "banner"],
+  "style": ["file:./tb-hero-landing.css"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-hero-landing.php"
+  },
+  "supports": {
+    "anchor": true,
+    "multiple": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "acf/cs-callout-banner",
+  "title": "Callout Banner Block",
+  "description": "Callout Banner Block",
+  "style": ["file:./cs-callout-banner.css"],
+  "category": "cs-content",
+  "icon": "admin-plugins",
+  "keywords": ["callout banner", "callout", "callout-banner"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cs-callout-banner.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

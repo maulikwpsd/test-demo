@@ -1,0 +1,79 @@
+.block-tb-hero-contact .contact-inner {
+  position: relative;
+}
+.block-tb-hero-contact .contact-inner .overlay {
+  aspect-ratio: 2.88;
+  width: 100%;
+}
+.block-tb-hero-contact .contact-inner .overlay:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(31, 75, 153, 0.75)), to(rgba(31, 75, 153, 0.75)));
+  background: linear-gradient(0deg, rgba(31, 75, 153, 0.75) 0%, rgba(31, 75, 153, 0.75) 100%);
+}
+.block-tb-hero-contact .hero-content {
+  padding: 96px 0px 252px;
+  color: var(--theme-color-contrast-light);
+}
+.block-tb-hero-contact .hero-content .contact-content {
+  row-gap: 36px;
+}
+.block-tb-hero-contact .contact-bottom-items {
+  margin-top: -150px;
+}
+.block-tb-hero-contact .contact-footer-links {
+  max-width: 1095px;
+  margin: auto;
+  margin-top: 64px;
+}
+.block-tb-hero-contact .contact-footer-links .row {
+  row-gap: 30px;
+}
+.block-tb-hero-contact .contact-footer-links .info_block {
+  padding: 48px 25px;
+  background: var(--theme-color-base-medium);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .block-tb-hero-contact .contact-footer-links .info_block {
+    min-width: unset;
+    padding: 48px 50px;
+  }
+}
+.block-tb-hero-contact .contact-footer-links .info_block p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  color: var(--theme-color-accent-emphasis);
+  margin: 0;
+}
+.block-tb-hero-contact .contact-footer-links .info_block p img {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  min-height: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.block-tb-hero-contact .contact-footer-links .info_block a {
+  color: var(--theme-color-contrast-dark);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.theme-corner-round .block-tb-hero-contact .contact-inner .overlay, .theme-corner-pill .block-tb-hero-contact .contact-inner .overlay {
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+}/*# sourceMappingURL=tb-hero-contact.css.map */

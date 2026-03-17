@@ -1,0 +1,17 @@
+{
+  "name": "acf/tb-hero-contact",
+  "title": "TB - Contact Hero",
+  "description": "Toolbox Contact hero block.",
+  "category": "cs-hero",
+  "icon": "admin-plugins",
+  "keywords": ["hero", "toolbox", "banner","contact"],
+  "style": ["file:./tb-hero-contact.css"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-hero-contact.php"
+  },
+  "supports": {
+    "anchor": true,
+    "multiple": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "acf/tb-featured-projects",
+  "title": "TB - Featured Projects",
+  "description": "TB Featured Projects Block.",
+  "style": ["file:./tb-featured-projects.css"],
+  "category": "cs-content",
+  "icon": "admin-generic",
+  "keywords": ["featured-projects", "projects", "featured-project"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-featured-projects.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,67 @@
+.featured-projects {
+    .row {
+        row-gap: 40px;
+    }
+}
+.custom-button {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-top: 36px;
+    button {
+        width: 30px;
+        height: 30px;
+        min-width: 30px;
+        min-height: 30px;
+        border: 2px solid var(--theme-color-accent-muted);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        background: transparent;
+        border-radius: 100%;
+        &:before {
+            content: "";
+            font-family: fontawesome;
+            font-size: 12px;
+            color: var(--theme-color-accent-muted);
+        }
+        &.prev-btn {
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.project-item {
+    .project-image {
+        aspect-ratio: 1.2962;
+        &::before {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.75) 100%);
+        }
+        .plus {
+            position: absolute;
+            bottom: 24px;
+            right: 24px;
+            z-index: 2;
+            width: 32px;
+            height: 32px;
+            border: 2px solid var(--theme-color-contrast-light);
+            border-radius: 100%;
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: "\2b";
+                padding: 0;
+                font-size: 15px;
+                font-family: fontawesome;
+                color: var(--theme-color-contrast-light);
+            }
+        }
+    }
+} 

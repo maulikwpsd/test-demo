@@ -1,0 +1,115 @@
+.block-cs-faqs {
+    &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1920px 100%;
+        left: 0;
+        top: 0;
+        mix-blend-mode: color-burn; 
+        @media screen and (min-width: 1921px) {
+            background-size: auto 100%;
+        }
+    }
+    .row {
+        row-gap: 30px;
+    }
+    .faqs-content-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .faqs-wrapper {
+        .faqs__wrapper {
+            row-gap: 24px;
+            .faq-single {
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+                padding: 24px;
+                .faq-title {
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                    column-gap: 15px;
+                    cursor: pointer;
+                    .plus {
+                        width: 16px;
+                        height: 16px;
+                        flex: 0 0 16px;
+                        background-color: var(--theme-color-accent-default);
+                        border-radius: 50%;
+                        overflow: hidden;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &::before {
+                            display: block;
+                            content: "";
+                            width: 8px;
+                            height: 2px;
+                            background-color: var(--theme-color-contrast-light);
+                            border-radius: 0px;
+                            transition: 0.5s all ease-in-out;
+                        }
+                        &::after {
+                            display: block;
+                            content: "";
+                            width: 8px;
+                            height: 2px;
+                            background-color: var(--theme-color-contrast-light);
+                            border-radius: 0px;
+                            position: absolute;
+                            transition: all 0.3s ease;
+                            transform: rotate(90deg);
+                            transition: 0.5s all ease-in-out;
+                        
+                        }
+                    }
+                }
+                .faq-content {
+                    display: none;
+                }
+                &.active {
+                    .plus {
+                        background-color: var(--theme-color-accent-muted);
+                        &:before {
+                            transform: rotate(-45deg);
+                        }
+                        &:after {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.faqs-content-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;
+}
+
+.block-cs-faqs.bg-bas-dar {
+    &:before {
+        opacity: 0.3;
+        background-image: var(--faqs-block-texture-light);
+    }
+}
+.block-cs-faqs.bg-bas-mid {
+    &:before {
+        background-image: var(--faqs-block-texture-dark);
+        opacity: 0.1;
+    }
+}
+.block-cs-faqs.bg-bas-lig {
+    &::before {
+        mix-blend-mode: unset;
+        background-image: var(--faqs-block-texture-dark);
+        opacity: 0.1;
+    }
+}

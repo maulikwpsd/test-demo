@@ -1,0 +1,145 @@
+.block-ng-our-process {
+    .process-steps {
+        .process-block {
+            .icon {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                border: 5px solid var(--theme-color-accent-default);
+                background: var(--theme-color-base-medium);
+                img {
+                    width: 60px;
+                    height: 60px;
+                    object-fit: contain;
+                    object-position: center center;
+                }
+            }
+        }
+    }
+}
+
+.block-tb-our-process {
+    overflow: hidden;
+    .proces-inner {
+        position: relative;
+        max-width: 1920px;
+        margin: 0 auto;
+        @media screen and (min-width: 1200px) {
+            padding: 70px 0;
+        }
+        .company-process-image {
+            position: relative;
+            top: 0;
+            height: 100%;
+            overflow: hidden;
+            aspect-ratio: 1;
+            border: 9px solid var(--theme-color-accent-muted);
+            max-height: 580px;
+            width: clamp(580px, 50vw, 694px);
+            @media screen and (min-width: 767px) {
+                position: absolute;
+            }
+            @media screen and (min-width: 992px) {
+                border: 14px solid var(--theme-color-accent-muted);
+            }
+            @media screen and (min-width: 1200px) {
+                max-height: 694px;
+            }
+        }
+        .form-wrapper {
+            max-width: 420px;
+            margin-top: -200px;
+            @media screen and (min-width: 767px) {
+                margin-top: 0;
+            }
+        }
+        .process-right-block {
+            max-width: 530px; 
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            margin-top: 40px;
+            @media screen and (min-width: 768px) {
+                margin-top: 100px;
+            }
+            @media screen and (min-width: 992px) {
+                margin-top: 0;
+            }
+            .procces-block {
+                display: flex;
+                flex-direction: column;
+                row-gap: 36px;
+                .process-block-item {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 24px;
+                    .icon {
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            min-width: 60px;
+                            min-height: 60px;
+                            object-fit: contain;
+                            object-position: center center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.right-process {
+        .proces-inner {
+            .company-process-image {
+                right: 60px;
+                @media screen and (min-width: 767px) {
+                    left: -90px;
+                }
+            }
+            .form-wrapper {
+                margin-left: auto;
+            }
+            .process-right-block {
+                @media screen and (min-width: 992px) {
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
+    &.left-process {
+        .proces-inner {
+            .company-process-image {
+                right: 60px;
+                @media screen and (min-width: 767px) {
+                    right: -90px;
+                }
+            }
+            .form-wrapper {
+                margin-right: auto;
+            }
+            .process-right-block {
+                margin-right: 30px;
+                margin-left: auto;
+            }
+            .row {
+                flex-direction: column;
+                @media screen and (min-width: 992px) {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+    &.process-tb-square {
+        .proces-inner {
+            .company-process-image {
+                border-radius: 16px;
+            }
+        }
+    }
+    &.process-tb-circle {
+        .proces-inner {
+            .company-process-image {
+                border-radius: 100%;
+            }
+        }
+    }
+}

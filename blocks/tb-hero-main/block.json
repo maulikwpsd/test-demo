@@ -1,0 +1,17 @@
+{
+  "name": "acf/tb-hero-main",
+  "title": "TB - Main Hero",
+  "description": "Toolbox Main hero block.",
+  "category": "cs-hero",
+  "icon": "admin-plugins",
+  "keywords": ["hero", "toolbox", "banner"],
+  "style": ["file:./tb-hero-main.css"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-hero-main.php"
+  },
+  "supports": {
+    "anchor": true,
+    "multiple": false
+  }
+}

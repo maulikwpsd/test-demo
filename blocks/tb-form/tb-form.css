@@ -1,0 +1,18 @@
+.block-ng-form.with-bg::before, .block-ng-form.with-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: var(--theme-color-base-medium);
+  clip-path: polygon(0 calc(0% + 30px), 100% 0, 100% 100%, 0% 100%);
+  margin-bottom: -1px;
+  z-index: -1;
+}
+.block-ng-form.with-bg::after {
+  height: calc(40% + 8px);
+  background-color: var(--theme-color-base-dark);
+  margin-bottom: 0;
+  z-index: -2;
+}/*# sourceMappingURL=ng-form.css.map */

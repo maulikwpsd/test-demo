@@ -1,0 +1,16 @@
+{
+  "name": "acf/cs-trust-factors",
+  "title": "Trust Factors Block",
+  "description": "Trust Factors Block",
+  "style": ["file:./cs-trust-factors.css"],
+  "category": "cs-content",
+  "icon": "admin-plugins",
+  "keywords": ["trust-factors", "trust", "factors"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cs-trust-factors.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

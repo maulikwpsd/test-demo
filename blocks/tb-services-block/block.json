@@ -1,0 +1,16 @@
+{
+  "name": "acf/tb-services-block",
+  "title": "TB - Services Block",
+  "description": "TB Services Block",
+  "style": ["file:./tb-services-block.css"],
+  "category": "cs-content",
+  "icon": "admin-generic",
+  "keywords": ["service", "services"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-services-block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

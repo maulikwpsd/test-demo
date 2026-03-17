@@ -1,0 +1,16 @@
+{
+  "name": "acf/cs-two-column",
+  "title": "Two Column Block",
+  "description": "2 Column content Block",
+  "category": "cs-content",
+  "icon": "admin-plugins",
+  "keywords": ["two-column", "image", "text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "cs-two-column.php"
+  },
+  "supports": {
+    "anchor": true,
+    "lock": true
+  }
+}

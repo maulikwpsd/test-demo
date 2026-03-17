@@ -1,0 +1,17 @@
+{
+  "name": "acf/tb-hero-secondary",
+  "title": "TB - Secondary Hero",
+  "description": "Toolbox Secondary hero block.",
+  "category": "cs-hero",
+  "icon": "admin-plugins",
+  "keywords": ["hero", "toolbox", "banner","secondary"],
+  "style": ["file:./tb-hero-secondary.css"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-hero-secondary.php"
+  },
+  "supports": {
+    "anchor": true,
+    "multiple": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "acf/tb-our-process",
+  "title": "TB - Our Process",
+  "description": "Our Process Block",
+  "style": ["file:./tb-our-process.css"],
+  "category": "cs-content",
+  "icon": "admin-generic",
+  "keywords": ["our-process", "process"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-our-process.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

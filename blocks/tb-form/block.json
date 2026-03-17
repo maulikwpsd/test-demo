@@ -1,0 +1,16 @@
+{
+  "name": "acf/tb-form",
+  "title": "TB - Form",
+  "description": "Toolbox Form Block",
+  "style": ["file:./tb-form.css"],
+  "category": "cs-content",
+  "icon": "admin-plugins",
+  "keywords": ["form", "image", "text"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tb-form.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

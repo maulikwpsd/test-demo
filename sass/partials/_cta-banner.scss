@@ -1,0 +1,26 @@
+@use "../abstracts/variables/media" as *;
+
+.cta-banner{
+    padding: 96px 0;
+    @media only screen and (min-width: $bp-xl) {
+        padding: 170px 0;
+    }
+    .overlay{
+        &::before{
+            opacity: 0.65;
+        }
+    }
+    .overlay {
+        // Need to add this in sass //
+        + div {
+            color: var(--theme-color-base-light);
+            .btn--secondary {
+                background-color: var(--theme-color-base-light);
+                color: var(--theme-color-contrast-dark);
+                &:is(:hover, :focus, :active) {
+                    background-color: var(--theme-color-base-medium);
+                }
+            }
+        }
+    }
+}
